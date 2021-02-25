@@ -70,10 +70,8 @@
     $age = $_GET['age'];
     
     $messaggio = 'Accesso negato';
-    // Definita questa variabile prima delle condizioni, solo per non vedere l'errore nella
-    $missing = '';
     if (empty($name) || empty($mail) || empty($age)) {
-        $missing = 'Un campo è vuoto, o non è corretto.';
+        $missing = 'Un campo della query è vuoto, o non è corretto.';
     } elseif (strlen($name) <= 3) {
         $missing = 'Il nome deve contentere più di 3 caratteri.';
     } elseif (!(strpos($mail, '@')) || !(strpos($mail, '.'))){
