@@ -71,7 +71,7 @@
     
     $messaggio = 'Accesso negato';
     if (empty($name) || empty($mail) || empty($age)) {
-        $missing = 'Un campo della query è vuoto, o non è corretto.';
+        $missing = 'Un campo della query è vuoto, o non è corretto. Help: [ ?name=&mail=&age= ]';
     } elseif (strlen($name) <= 3) {
         $missing = 'Il nome deve contentere più di 3 caratteri.';
     } elseif (!(strpos($mail, '@')) || !(strpos($mail, '.'))){
