@@ -80,6 +80,7 @@
         $missing = 'L\'età non è un numero.';
     } else {
         $messaggio = 'Accesso riuscito';
+        $missing = 'Benvenuto';
     }
 
 ?>
