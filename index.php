@@ -68,7 +68,15 @@
 </head>
 <body>
     
-
+    <?php
+        for ($i = 0; $i < $matchesLength; $i++) {
+            $homeTeam = $matches[$i]['homeTeam'];
+            $visitingTeam = $matches[$i]['visitingTeam'];
+            $homeTeamPoints = $matches[$i]['homeTeamPoints'];
+            $visitingTeamPoints = $matches[$i]['visitingTeamPoints'];
+    ?>
+    
+    <?php } ?>
 
 </body>
 </html>
