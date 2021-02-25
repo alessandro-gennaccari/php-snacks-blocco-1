@@ -70,6 +70,20 @@
     $age = $_GET['age'];
     
     $messaggio = 'Accesso negato';
+    // Definita questa variabile prima delle condizioni, solo per non vedere l'errore nella
+    $missing = '';
+    if (empty($name) || empty($mail) || empty($age)) {
+        $missing = 'Un campo è vuoto, o non è corretto.';
+    } elseif (strlen($name) <= 3) {
+        $missing = 'Il nome deve contentere più di 3 caratteri.';
+    } elseif (!(strpos($mail, '@')) || !(strpos($mail, '.'))){
+        $missing = 'La mail deve contentere "@" e "."';
+    } elseif (!is_numeric($age)) {
+        $missing = 'L\'età non è un numero.';
+    } else {
+        $messaggio = 'Accesso riuscito';
+    }
+
 ?>
 
 <!DOCTYPE html>
@@ -105,10 +119,12 @@
     <h2>Snack - 2</h2>
 
     <h3>
-        <?php
-            echo $messaggio;
-        ?>
+        <?php echo $messaggio;?>
     </h3>
+
+    <p>
+        <?php echo $missing;?>
+    </p>
 
 </body>
 </html>
