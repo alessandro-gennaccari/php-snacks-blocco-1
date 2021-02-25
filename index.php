@@ -71,7 +71,9 @@
     <h2>Snack - 1</h2>
 
     <?php
+        // Ciclo for per scorrere tutto l'array
         for ($i = 0; $i < $matchesLength; $i++) {
+            // Salvo ogni dato che mi serve in una variabile
             $homeTeam = $matches[$i]['homeTeam'];
             $visitingTeam = $matches[$i]['visitingTeam'];
             $homeTeamPoints = $matches[$i]['homeTeamPoints'];
@@ -79,6 +81,7 @@
 
             <h3>
                 <?php
+                    // Stampo a schermo i miei dati
                     echo $homeTeam .' - ' .$visitingTeam .' | ' .$homeTeamPoints .' - ' .$visitingTeamPoints;
                 ?>
             </h3>
