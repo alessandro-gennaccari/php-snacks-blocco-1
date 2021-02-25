@@ -60,12 +60,16 @@
     // PHP Snack 2:
     // Passare come parametri GET name, mail e age e verificare
     // (cercando i metodi che non conosciamo nella documentazione) che:
-    // 1. name sia più lungo di 3 caratteri,
-    // 2. mail contenga un punto e una chiocciola
-    // 3. age sia un numero.
+    // 1. name sia più lungo di 3 caratteri,{strlen}
+    // 2. mail contenga un punto e una chiocciola {strpos}
+    // 3. age sia un numero. {is_numeric}
     // Se tutto è ok stampare “Accesso riuscito”, altrimenti “Accesso negato”.
 
-
+    $name = $_GET['name'];
+    $mail = $_GET['mail'];
+    $age = $_GET['age'];
+    
+    $messaggio = 'Accesso negato';
 ?>
 
 <!DOCTYPE html>
@@ -74,7 +78,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Snack1-2 Array and If Condition</title>
+    <title>Snack 1-2 Array and If Condition</title>
 </head>
 <body>
 
@@ -100,7 +104,11 @@
 
     <h2>Snack - 2</h2>
 
-
+    <h3>
+        <?php
+            echo $messaggio;
+        ?>
+    </h3>
 
 </body>
 </html>
