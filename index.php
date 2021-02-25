@@ -1,14 +1,58 @@
 <?php
 
     // PHP Snack 1:
-    // Creiamo un array 'matches',
+    // Creiamo un [array 'matches'],
     // contenente altri array i quali rappresentano delle partite di basket di un’ipotetica tappa del calendario.
-    // Ogni array della partita avrà una squadra di casa e una squadra ospite, punti fatti dalla squadra di casa e punti fatti dalla squadra ospite.
+    // Ogni array della partita avrà una {squadra di casa} e una {squadra ospite},
+    // {punti fatti dalla squadra di casa} e {punti fatti dalla squadra ospite}.
     // Stampiamo a schermo tutte le partite con questo schema:
     // Olimpia Milano - Cantù | 55 - 60
 
 
-    $matches = [];
+    $matches = [
+        [
+            'homeTeam' => 'Fortitudo Bologna',
+            'visitingTeam' => 'Dinamo Sassari',
+            'homeTeamPoints' => 79,
+            'visitingTeamPoints' => 89
+        ],
+        [
+            'homeTeam' => 'Trieste',
+            'visitingTeam' => 'Brescia',
+            'homeTeamPoints' => 78,
+            'visitingTeamPoints' => 81
+        ],
+        [
+            'homeTeam' => 'Varese',
+            'visitingTeam' => 'Cremona',
+            'homeTeamPoints' => 110,
+            'visitingTeamPoints' => 105 
+        ],
+        [
+            'homeTeam' => 'Trento',
+            'visitingTeam' => 'VL Pesaro',
+            'homeTeamPoints' => 70,
+            'visitingTeamPoints' => 81
+        ],
+        [
+            'homeTeam' => 'Venezia',
+            'visitingTeam' => 'Cantù',
+            'homeTeamPoints' => 80,
+            'visitingTeamPoints' => 75
+        ],
+        [
+            'homeTeam' => 'Universo Treviso',
+            'visitingTeam' => 'Brindisi',
+            'homeTeamPoints' => 90,
+            'visitingTeamPoints' => 108
+        ],
+        [
+            'homeTeam' => 'Reggiana',
+            'visitingTeam' => 'Virtus Bologna',
+            'homeTeamPoints' => 62,
+            'visitingTeamPoints' => 89
+        ]
+    ];
 
 ?>
 
