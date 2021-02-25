@@ -67,16 +67,24 @@
     <title>Snack1-2 Array and If Condition</title>
 </head>
 <body>
-    
+
+    <h2>Snack - 1</h2>
+
     <?php
         for ($i = 0; $i < $matchesLength; $i++) {
             $homeTeam = $matches[$i]['homeTeam'];
             $visitingTeam = $matches[$i]['visitingTeam'];
             $homeTeamPoints = $matches[$i]['homeTeamPoints'];
-            $visitingTeamPoints = $matches[$i]['visitingTeamPoints'];
-    ?>
-    
+            $visitingTeamPoints = $matches[$i]['visitingTeamPoints'];?>   
+
+            <h3>
+                <?php
+                    echo $homeTeam .' - ' .$visitingTeam .' | ' .$homeTeamPoints .' - ' .$visitingTeamPoints;
+                ?>
+            </h3>
+
     <?php } ?>
+
 
 </body>
 </html>
