@@ -8,7 +8,7 @@
     // Stampiamo a schermo tutte le partite con questo schema:
     // Olimpia Milano - Cantù | 55 - 60
 
-
+    // Array di partenza con tutti i dati delle squadre
     $matches = [
         [
             'homeTeam' => 'Fortitudo Bologna',
@@ -53,6 +53,8 @@
             'visitingTeamPoints' => 89
         ]
     ];
+    // Calcolo la lunghezza dell'array
+    $matchesLength = count($matches);
 
 ?>
 
